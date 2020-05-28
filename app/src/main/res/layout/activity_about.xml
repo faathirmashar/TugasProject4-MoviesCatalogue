@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.About">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_about"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="136dp"
+        android:layout_height="136dp"/>
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:lineSpacingExtra="8dp"
+        android:gravity="center"
+        android:text="Audi Faathirmansyah Mashar\n13020170001\nMP-1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
