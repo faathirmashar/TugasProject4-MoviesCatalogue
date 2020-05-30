@@ -18,7 +18,8 @@
             android:id="@+id/list_img"
             tools:src="@tools:sample/avatars"
             android:layout_width="wrap_content"
-            android:layout_height="180dp"/>
+            android:layout_height="180dp"
+            android:contentDescription="@string/todo" />
 
         <LinearLayout
             android:padding="10dp"
@@ -30,7 +31,7 @@
                 android:id="@+id/list_title"
                 android:layout_marginBottom="8dp"
                 tools:text="Judul"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -54,8 +55,8 @@
                     android:textColor="@android:color/white"
                     android:background="@color/colorPrimary"
                     android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true"
-                    android:text="Hapus"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/hapus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 

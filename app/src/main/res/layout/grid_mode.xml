@@ -19,7 +19,8 @@
             android:id="@+id/list_img"
             tools:src="@tools:sample/avatars"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo" />
 
         <TextView
             android:id="@+id/list_title"

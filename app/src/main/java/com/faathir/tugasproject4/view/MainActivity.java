@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MovieRecyclerAdapter adapter;
     private GridLayoutManager layoutManager;
-    private MovieRepository repository;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         init();
 
-        repository = MovieRepository.getInstance();
-        adapter.setData(repository.getData());
+        MovieRepository.getInstance().init();
+        adapter.setData(MovieRepository.getInstance().getData());
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }

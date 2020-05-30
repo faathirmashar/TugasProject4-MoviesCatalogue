@@ -1,8 +1,11 @@
 package com.faathir.tugasproject4.model;
 
+import android.os.Parcelable;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class Movies {
+public class Movies{
     private String imgUrl;
     private String title;
     private String detail;

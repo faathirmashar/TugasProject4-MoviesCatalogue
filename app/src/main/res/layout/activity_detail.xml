@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.Detail">
@@ -10,7 +11,7 @@
         android:padding="12dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -20,7 +21,8 @@
             <ImageView
                 android:id="@+id/img_detail"
                 android:layout_width="wrap_content"
-                android:layout_height="240dp"/>
+                android:layout_height="240dp"
+                android:contentDescription="@string/todo" />
 
             <LinearLayout
                 android:padding="12dp"
@@ -31,7 +33,7 @@
                 <TextView
                     android:id="@+id/title_detail"
                     android:layout_marginBottom="12dp"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     tools:text="The text"
                     android:layout_width="match_parent"
@@ -77,8 +79,8 @@
             <TextView
                 android:layout_marginBottom="12dp"
                 android:textStyle="bold"
-                android:textSize="18dp"
-                android:text="Description"
+                android:textSize="18sp"
+                android:text="@string/description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -102,8 +104,8 @@
             <TextView
                 android:layout_marginBottom="12dp"
                 android:textStyle="bold"
-                android:textSize="18dp"
-                android:text="Cast and Crew"
+                android:textSize="18sp"
+                android:text="@string/cast_and_crew"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 

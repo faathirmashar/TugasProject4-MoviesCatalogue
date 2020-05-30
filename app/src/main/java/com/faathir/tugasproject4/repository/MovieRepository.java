@@ -261,7 +261,8 @@ public class MovieRepository {
         return al;
     }
 
-    public List<Movies> getData(){
+    public void init(){
+        list.clear();
         list.add(new Movies("https://image.tmdb.org/t/p/w600_and_h900_bestv2/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg","Harry Potter and the Philosopher's Stone (2001)","Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame.","Adventure, Fantasy, Family","2h 32m","Chris Columbus","2001", getHarryPotter2001()));
         list.add(new Movies("https://image.tmdb.org/t/p/w600_and_h900_bestv2/csOv5H7R2zdnKaYuTrGVWohmo8d.jpg","Harry Potter and the Chamber of Secrets (2002)","Cars fly, trees fight back, and a mysterious house-elf comes to warn Harry Potter at the start of his second year at Hogwarts. Adventure and danger await when bloody writing on a wall announces: The Chamber Of Secrets Has Been Opened. To save Hogwarts will require all of Harry, Ron and Hermione’s magical abilities and courage.","Adventure, Fantasy","2h 41m","Chris Columbus","2002", getHarryPotter2002()));
         list.add(new Movies("https://image.tmdb.org/t/p/w600_and_h900_bestv2/uDQibffYgssdiqx7izO57wdLc6.jpg","Harry Potter and the Prisoner of Azkaban (2004)","Harry, Ron and Hermione return to Hogwarts for another magic-filled year. Harry comes face to face with danger yet again, this time in the form of escaped convict, Sirius Black—and turns to sympathetic Professor Lupin for help.","Adventure, Fantasy","2h 21m","Alfonso Cuarón","2004", getHarryPotter2004()));
@@ -282,11 +283,14 @@ public class MovieRepository {
         list.add(new Movies("https://image.tmdb.org/t/p/w600_and_h900_bestv2/rMDSrALDxq6IP6GBYwejKFzPbUS.jpg","Creating the World of Harry Potter, Part 1: The Magic Begins (2009)","The magic begins. The choices, the breakthroughs, the early decisions that impacted all the films are explored here via rare footage, cast and crew reminiscences and more. Learn about the extensive search by producer David Heyman and director Chris Columbus for the perfect actors to portray Harry, Ron and Hermione and see the earliest meeting of Daniel Radcliffe, Rupert Grint and Emma Watson. Be on the scene as imagination and know-how combine to create a look that's distinctly wizardly. From details tiny (what about Hermione's buckteeth?) to huge (Quidditch, anyone?), this is the fun and fascinating opening of a whole new portal into Harry's world.","Documentary, Fantasy","1h 3m","Chris Columbus","2009", getHarryPotter2009_part1()));
         list.add(new Movies("https://image.tmdb.org/t/p/w600_and_h900_bestv2/blUbVQHbRoYAJeckElbpXhCklli.jpg","Creating the World of Harry Potter, Part 7: Story (2012)","Over the course of ten years, screenwriter Steve Kloves worked tirelessly with author J.K. Rowling to develop her magical books into films. From the beginning, Kloves had to decide what to keep, what to change, and what to cut, all while staying true to Rowling's vision, initially without even knowing how the series ended! Learn the story behind the stories as they sit down together for an intimate, free-flowing conversation.","Documentary, Fantasy","47m","James Wan","2012", getHarryPotter2012_part7()));
         list.add(new Movies("https://image.tmdb.org/t/p/w600_and_h900_bestv2/rS2rK4NQyuO97zLMR35OSNYhJ0z.jpg","Creating the World of Harry Potter, Part 4: Sound and Music (2010)","Can you imagine the Yule Ball without the Potter Waltz? Quidditch without the whoooosh of flying? Or any Harry Potter film without the iconic Hedwig’s Theme? Now, riveting interviews and behind-the- scenes glimpses let you share the vision of composers, sound experts, and others who make the Harry Potter films enchantment for the ears as well as the eyes. Experience sound and music that magnify triumph and fear, joy and suspense, while transporting viewers on an emotional journey alongside the on-screen characters. Learn how specially created musical motifs identify individual characters and places. Watch as Foley artists use unusual techniques to replicate everyday sounds. Discover a whole new way to look at – and listen to – Harry’s world.","Documentary, Fantasy","54m","Chris Columbus","2010", getHarryPotter2010_part4()));
+    }
+
+    public List<Movies> getData(){
         return list;
     }
 
     public void removeIndex(int index){
-        list.remove(index);
+        getData().remove(index);
     }
 
     public void clearData(){

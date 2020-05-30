@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TugasProject4</string>
+    <string name="hapus">Hapus</string>
+    <string name="todo">TODO</string>
+    <string name="cast_and_crew">Cast and Crew</string>
+    <string name="description">Description</string>
+    <string name="audi_faathirmansyah_mashar_n13020170001_nmp_1">Audi Faathirmansyah Mashar\n13020170001\nMP-1</string>
 </resources>

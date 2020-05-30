@@ -11,7 +11,8 @@
         android:layout_centerHorizontal="true"
         android:layout_width="116dp"
         android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/cast_and_crew_title"

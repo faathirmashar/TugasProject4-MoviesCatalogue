@@ -35,9 +35,4 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.google.android.material:material:1.2.0-alpha06'
-
-    def lifecycle_version = "2.2.0"
-
-    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 }

@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide;
 import com.faathir.tugasproject4.R;
 import com.faathir.tugasproject4.helper.MoviesRecyclerViewHolder;
 import com.faathir.tugasproject4.model.Movies;
+import com.faathir.tugasproject4.repository.MovieRepository;
 import com.faathir.tugasproject4.view.Detail;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -77,7 +78,7 @@ public class MovieRecyclerAdapter extends RecyclerView.Adapter<MoviesRecyclerVie
             holder.btn_hapus.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    list.remove(holder.getAdapterPosition());
+                    MovieRepository.getInstance().removeIndex(holder.getAdapterPosition());
                     notifyItemRemoved(holder.getAdapterPosition());
                 }
             });
